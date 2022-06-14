@@ -42,7 +42,6 @@ export class HomePage implements OnInit {
     this.viewTitle = title;
   }
   async onEventSelected(event) {
-    // Use Angular date pipe for conversion
     const start = formatDate(event.startTime, 'medium', this.locale);
     const end = formatDate(event.endTime, 'medium', this.locale);
 
@@ -154,3 +153,4 @@ export class HomePage implements OnInit {
     });
   }
 }
+
